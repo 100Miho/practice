@@ -29,7 +29,11 @@ public class Ex16 {
 			tax = profit * 0.09;
 		} else if (profit > 1000 && profit <= 4000) {
 			tax = (1000*0.09) + 0.18*(profit-1000);
+		} else if (profit > 4000 && profit <=800) {
+			tax = (1000*0.09) + (3000*0.18)  + 0.27*(profit-4000);
 		} 
+		
+		
 		sc.close();
 	}
 }
