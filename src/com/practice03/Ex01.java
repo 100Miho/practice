@@ -1,4 +1,4 @@
-package com.javaex.practice03;
+package com.practice03;
 
 import java.util.Scanner;
 

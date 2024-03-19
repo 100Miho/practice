@@ -1,4 +1,4 @@
-package com.javaex.practice03;
+package com.practice03;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -160,6 +160,9 @@ public class Ex11 {
 				case "n":
 					num = ran.nextInt(100) + 1;
 					continue;
+				default:
+					System.out.println("잘못 입력하셨습니다.");
+					break;
 				}
 			} else if (num > input) {
 				System.out.println("UP!");
