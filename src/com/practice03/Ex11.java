@@ -9,7 +9,7 @@ public class Ex11 {
 		
 		System.out.println("\nEx11");
 		System.out.print("숫자를 입력하세요. >> ");
-		int num = sc.nextInt(), result = 0;
+		int num = sc.nextInt();
 		if(num % 2 != 0) {
 			for(int i=num-2; i>0; i-=2) {
 				num+=i;
