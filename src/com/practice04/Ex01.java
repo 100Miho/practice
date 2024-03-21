@@ -99,15 +99,12 @@ public class Ex01 {
 		
 		System.out.println("\n\nEx08 - 중복 없는 미니 로또");
 		int[] lotto = new int[6];
-		while(true) {
-			for(int i=0; i<lotto.length; i++) {
+		for(int i=0; i<lotto.length; i++) {
+			lotto[i] = (int)(Math.random()*45) + 1;
+			if ((i > 0) && (lotto[i] == lotto[i-1])) {
 				lotto[i] = (int)(Math.random()*45) + 1;
-				if ((i > 0) && (lotto[i] == lotto[i-1])) {
-					lotto[i] = (int)(Math.random()*45) + 1;
-				}
-				System.out.print(lotto[i] + " ");
 			}
-			break;
+			System.out.print(lotto[i] + " ");
 		}
 	}
 }
